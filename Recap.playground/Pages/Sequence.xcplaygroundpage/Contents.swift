@@ -33,13 +33,13 @@ canvas.drawShapesWithBorders = false
 canvas.fillColor = Color.red
 
 canvas.drawEllipse(centreX: 100, centreY: 150, width: 150, height: 150)
-
-canvas.fillColor = Color.blue
-
-canvas.drawRectangle(centreX: 200, centreY: 200, width: 100, height: 300)
 canvas.fillColor = Color.yellow
 
 canvas.drawRoundedRectangle(centreX: 300, centreY: 200, width: 100, height: 150)
+canvas.fillColor = Color(hue: 230, saturation: 100, brightness: 100, alpha: 50)
+
+canvas.drawRectangle(centreX: 200, centreY: 200, width: 150, height: 300)
+
 
 canvas.fillColor = Color(hue: 125, saturation: 100, brightness: 100, alpha: 50)
 
