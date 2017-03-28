@@ -41,6 +41,9 @@ canvas.drawEllipse(centreX: 70, centreY: 117, width: 20, height: 20, borderWidth
 canvas.borderColor = Color.black
 canvas.drawEllipse(centreX: 70, centreY: 117, width: 10, height: 10, borderWidth: 5)
 
+canvas.lineColor = Color.white
+canvas.drawLine(fromX: 0, fromY: 125, toX: 400, toY: 125, lineWidth: 17, capStyle: NSLineCapStyle.buttLineCapStyle)
+
 //;lines up and down
 
 canvas.lineColor = Color.black
@@ -58,21 +61,13 @@ canvas.lineColor = Color.white
 
 canvas.drawLine(fromX: 50, fromY: 50, toX: 50, toY: 150, lineWidth: 5, capStyle: NSLineCapStyle.roundLineCapStyle)
 
-//canvas.drawLine(fromX: 0, fromY: 100, toX: 400, toY: 100, lineWidth: 35, capStyle: NSLineCapStyle.buttLineCapStyle)
 
 
 
 
 
-//canvas.borderColor = Color.yellow
-//canvas.drawEllipse(centreX: 70, centreY: 117, width: 30, height: 30, borderWidth: 5)
-//
-//
-//canvas.borderColor = Color.orange
-//canvas.drawEllipse(centreX: 70, centreY: 117, width: 20, height: 20, borderWidth: 5)
-//
-//canvas.borderColor = Color.black
-//canvas.drawEllipse(centreX: 70, centreY: 117, width: 10, height: 10, borderWidth: 5)
+
+
 
 /*:
  ## Template code
