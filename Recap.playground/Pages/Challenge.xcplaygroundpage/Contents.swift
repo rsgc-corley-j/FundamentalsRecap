@@ -28,6 +28,51 @@ import PlaygroundSupport
 let canvas = Canvas(width: 400, height: 400)
 
 // Replace this comment and add your code below
+canvas.drawShapesWithFill = false
+
+
+canvas.borderColor = Color.yellow
+canvas.drawEllipse(centreX: 70, centreY: 117, width: 30, height: 30, borderWidth: 5)
+
+
+canvas.borderColor = Color.orange
+canvas.drawEllipse(centreX: 70, centreY: 117, width: 20, height: 20, borderWidth: 5)
+
+canvas.borderColor = Color.black
+canvas.drawEllipse(centreX: 70, centreY: 117, width: 10, height: 10, borderWidth: 5)
+
+//;lines up and down
+
+canvas.lineColor = Color.black
+canvas.drawLine(fromX: 50, fromY: 50, toX: 50, toY: 150, lineWidth: 35, capStyle: NSLineCapStyle.roundLineCapStyle)
+
+canvas.lineColor = Color.orange
+canvas.drawLine(fromX: 50, fromY: 50, toX: 50, toY: 150, lineWidth: 25, capStyle: NSLineCapStyle.roundLineCapStyle)
+
+canvas.lineColor = Color.yellow
+canvas.drawLine(fromX: 50, fromY: 50, toX: 50, toY: 150, lineWidth: 15, capStyle: NSLineCapStyle.roundLineCapStyle)
+
+
+
+canvas.lineColor = Color.white
+
+canvas.drawLine(fromX: 50, fromY: 50, toX: 50, toY: 150, lineWidth: 5, capStyle: NSLineCapStyle.roundLineCapStyle)
+
+//canvas.drawLine(fromX: 0, fromY: 100, toX: 400, toY: 100, lineWidth: 35, capStyle: NSLineCapStyle.buttLineCapStyle)
+
+
+
+
+
+//canvas.borderColor = Color.yellow
+//canvas.drawEllipse(centreX: 70, centreY: 117, width: 30, height: 30, borderWidth: 5)
+//
+//
+//canvas.borderColor = Color.orange
+//canvas.drawEllipse(centreX: 70, centreY: 117, width: 20, height: 20, borderWidth: 5)
+//
+//canvas.borderColor = Color.black
+//canvas.drawEllipse(centreX: 70, centreY: 117, width: 10, height: 10, borderWidth: 5)
 
 /*:
  ## Template code
