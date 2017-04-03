@@ -25,44 +25,62 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 520, height: 520)
+let canvas = Canvas(width: 540, height: 540)
 // Replace this comment and add your code below
 canvas.drawShapesWithFill = false
 
 
 for y in stride(from: 0, through: 520, by: 270){
-for x in stride(from: 0, through: 520, by: 90){
-
-canvas.borderColor = Color.black
-canvas.drawEllipse(centreX: 40 + x, centreY: 40 + y, width: 70, height: 70, borderWidth: 10)
-
-canvas.borderColor = Color.orange
-canvas.drawEllipse(centreX: 40 + x, centreY: 40 + y, width: 50, height: 50, borderWidth: 10)
-
-canvas.borderColor = Color.yellow
-canvas.drawEllipse(centreX: 40 + x, centreY: 40 + y, width: 30, height: 30, borderWidth: 10)
-    
-
-    
-    
-    canvas.borderColor = Color.black
-    canvas.drawEllipse(centreX: 40 + x, centreY: 220 + y, width: 70, height: 70, borderWidth: 10)
-    
-    canvas.borderColor = Color.orange
-    canvas.drawEllipse(centreX: 40 + x, centreY: 220 + y, width: 50, height: 50, borderWidth: 10)
-    
-    canvas.borderColor = Color.yellow
-    canvas.drawEllipse(centreX: 40 + x, centreY: 220 + y, width: 30, height: 30, borderWidth: 10)
-
-
+    for x in stride(from: 0, through: 520, by: 80){
+        
+        canvas.borderColor = Color.black
+        canvas.drawEllipse(centreX: 40 + x, centreY: 40 + y, width: 60, height: 60, borderWidth: 10)
+        
+        canvas.borderColor = Color.orange
+        canvas.drawEllipse(centreX: 40 + x, centreY: 40 + y, width: 40, height: 40, borderWidth: 10)
+        
+        canvas.borderColor = Color.yellow
+        canvas.drawEllipse(centreX: 40 + x, centreY: 40 + y, width: 20, height: 20, borderWidth: 10)
+        
+        //top row of circles
+        
+        
+        canvas.borderColor = Color.black
+        canvas.drawEllipse(centreX: 40 + x, centreY: 220 + y, width: 60, height: 60, borderWidth: 10)
+        
+        canvas.borderColor = Color.orange
+        canvas.drawEllipse(centreX: 40 + x, centreY: 220 + y, width: 40, height: 40, borderWidth: 10)
+        
+        canvas.borderColor = Color.yellow
+        canvas.drawEllipse(centreX: 40 + x, centreY: 220 + y, width: 20, height: 20, borderWidth: 10)
+        
+        
+    }
 }
+for y in stride(from: 0, through: 520, by: 270){
+    for x in stride(from: 0, through: 520, by: 80){
+        
+        canvas.borderColor = Color.yellow
+        canvas.drawEllipse(centreX: 0 + x, centreY: 90 + y, width: 60, height: 60, borderWidth: 10)
+        
+        canvas.borderColor = Color.orange
+        canvas.drawEllipse(centreX: 0 + x, centreY: 90 + y, width: 40, height: 40, borderWidth: 10)
+        
+        canvas.borderColor = Color.black
+        canvas.drawEllipse(centreX: 0 + x, centreY: 90 + y, width: 20, height: 20, borderWidth: 10)
+        
+        canvas.borderColor = Color.yellow
+        canvas.drawEllipse(centreX: 0 + x, centreY: 170 + y, width: 60, height: 60, borderWidth: 10)
+        
+        canvas.borderColor = Color.orange
+        canvas.drawEllipse(centreX: 0 + x, centreY: 170 + y, width: 40, height: 40, borderWidth: 10)
+        
+        canvas.borderColor = Color.black
+        canvas.drawEllipse(centreX: 0 + x, centreY: 170 + y, width: 20, height: 20, borderWidth: 10)
+    }
 }
-
-canvas.drawEllipse(centreX: 0, centreY: <#T##Int#>, width: <#T##Int#>, height: <#T##Int#>, borderWidth: <#T##Int#>)
-
-
-
-
+canvas.lineColor = Color.white
+canvas.drawLine(fromX: 0, fromY: 65, toX: 520, toY: 65, lineWidth: 50, capStyle: NSLineCapStyle.squareLineCapStyle)
 //
 //
 //canvas.borderColor = Color.yellow
