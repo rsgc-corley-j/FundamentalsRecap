@@ -25,41 +25,75 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 400)
-
+let canvas = Canvas(width: 520, height: 520)
 // Replace this comment and add your code below
 canvas.drawShapesWithFill = false
 
 
-canvas.borderColor = Color.yellow
-canvas.drawEllipse(centreX: 70, centreY: 117, width: 30, height: 30, borderWidth: 5)
-
-
-canvas.borderColor = Color.orange
-canvas.drawEllipse(centreX: 70, centreY: 117, width: 20, height: 20, borderWidth: 5)
+for y in stride(from: 0, through: 520, by: 270){
+for x in stride(from: 0, through: 520, by: 90){
 
 canvas.borderColor = Color.black
-canvas.drawEllipse(centreX: 70, centreY: 117, width: 10, height: 10, borderWidth: 5)
+canvas.drawEllipse(centreX: 40 + x, centreY: 40 + y, width: 70, height: 70, borderWidth: 10)
 
-canvas.lineColor = Color.white
-canvas.drawLine(fromX: 0, fromY: 125, toX: 400, toY: 125, lineWidth: 17, capStyle: NSLineCapStyle.buttLineCapStyle)
+canvas.borderColor = Color.orange
+canvas.drawEllipse(centreX: 40 + x, centreY: 40 + y, width: 50, height: 50, borderWidth: 10)
 
-//;lines up and down
+canvas.borderColor = Color.yellow
+canvas.drawEllipse(centreX: 40 + x, centreY: 40 + y, width: 30, height: 30, borderWidth: 10)
+    
 
-canvas.lineColor = Color.black
-canvas.drawLine(fromX: 50, fromY: 50, toX: 50, toY: 150, lineWidth: 35, capStyle: NSLineCapStyle.roundLineCapStyle)
+    
+    
+    canvas.borderColor = Color.black
+    canvas.drawEllipse(centreX: 40 + x, centreY: 220 + y, width: 70, height: 70, borderWidth: 10)
+    
+    canvas.borderColor = Color.orange
+    canvas.drawEllipse(centreX: 40 + x, centreY: 220 + y, width: 50, height: 50, borderWidth: 10)
+    
+    canvas.borderColor = Color.yellow
+    canvas.drawEllipse(centreX: 40 + x, centreY: 220 + y, width: 30, height: 30, borderWidth: 10)
 
-canvas.lineColor = Color.orange
-canvas.drawLine(fromX: 50, fromY: 50, toX: 50, toY: 150, lineWidth: 25, capStyle: NSLineCapStyle.roundLineCapStyle)
 
-canvas.lineColor = Color.yellow
-canvas.drawLine(fromX: 50, fromY: 50, toX: 50, toY: 150, lineWidth: 15, capStyle: NSLineCapStyle.roundLineCapStyle)
+}
+}
+
+canvas.drawEllipse(centreX: 0, centreY: <#T##Int#>, width: <#T##Int#>, height: <#T##Int#>, borderWidth: <#T##Int#>)
 
 
 
-canvas.lineColor = Color.white
 
-canvas.drawLine(fromX: 50, fromY: 50, toX: 50, toY: 150, lineWidth: 5, capStyle: NSLineCapStyle.roundLineCapStyle)
+//
+//
+//canvas.borderColor = Color.yellow
+//canvas.drawEllipse(centreX: 70, centreY: 117, width: 30, height: 30, borderWidth: 5)
+//
+//
+//canvas.borderColor = Color.orange
+//canvas.drawEllipse(centreX: 70, centreY: 117, width: 20, height: 20, borderWidth: 5)
+//
+//canvas.borderColor = Color.black
+//canvas.drawEllipse(centreX: 70, centreY: 117, width: 10, height: 10, borderWidth: 5)
+//
+//canvas.lineColor = Color.white
+//canvas.drawLine(fromX: 0, fromY: 125, toX: 400, toY: 125, lineWidth: 17, capStyle: NSLineCapStyle.buttLineCapStyle)
+//
+////;lines up and down
+//
+//canvas.lineColor = Color.black
+//canvas.drawLine(fromX: 50, fromY: 50, toX: 50, toY: 150, lineWidth: 35, capStyle: NSLineCapStyle.roundLineCapStyle)
+//
+//canvas.lineColor = Color.orange
+//canvas.drawLine(fromX: 50, fromY: 50, toX: 50, toY: 150, lineWidth: 25, capStyle: NSLineCapStyle.roundLineCapStyle)
+//
+//canvas.lineColor = Color.yellow
+//canvas.drawLine(fromX: 50, fromY: 50, toX: 50, toY: 150, lineWidth: 15, capStyle: NSLineCapStyle.roundLineCapStyle)
+//
+//
+//
+//canvas.lineColor = Color.white
+//
+//canvas.drawLine(fromX: 50, fromY: 50, toX: 50, toY: 150, lineWidth: 5, capStyle: NSLineCapStyle.roundLineCapStyle)
 
 
 
