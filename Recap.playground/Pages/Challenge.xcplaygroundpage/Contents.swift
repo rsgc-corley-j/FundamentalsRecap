@@ -25,10 +25,11 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 540, height: 540)
+let canvas = Canvas(width: 520, height: 520)
 // Replace this comment and add your code below
 canvas.drawShapesWithFill = false
 
+//black edged circles
 
 for y in stride(from: 0, through: 520, by: 270){
     for x in stride(from: 0, through: 520, by: 80){
@@ -57,6 +58,8 @@ for y in stride(from: 0, through: 520, by: 270){
         
     }
 }
+
+//yellow edged circles
 for y in stride(from: 0, through: 520, by: 270){
     for x in stride(from: 0, through: 520, by: 80){
         
@@ -79,8 +82,68 @@ for y in stride(from: 0, through: 520, by: 270){
         canvas.drawEllipse(centreX: 0 + x, centreY: 170 + y, width: 20, height: 20, borderWidth: 10)
     }
 }
+
+//white lines
+for x in stride(from: 0, through: 540, by: 270){
 canvas.lineColor = Color.white
-canvas.drawLine(fromX: 0, fromY: 65, toX: 520, toY: 65, lineWidth: 50, capStyle: NSLineCapStyle.squareLineCapStyle)
+canvas.drawLine(fromX: 0, fromY: 65 + x, toX: 520, toY: 65 + x, lineWidth: 50, capStyle: NSLineCapStyle.squareLineCapStyle)
+canvas.drawLine(fromX: 0, fromY: 195 + x, toX: 520, toY: 195 + x, lineWidth: 50, capStyle: NSLineCapStyle.squareLineCapStyle)
+}
+
+//coloured lines starting with black
+for y in stride(from: 0, through: 520, by: 270){
+    for x in stride(from: 0, through: 520, by: 80){
+
+//top lines
+canvas.lineColor = Color.black
+canvas.drawLine(fromX: 10 + x, fromY: 45 + y, toX: 10 + x, toY: 85 + y, lineWidth: 10, capStyle: NSLineCapStyle.squareLineCapStyle)
+
+canvas.lineColor = Color.orange
+canvas.drawLine(fromX: 20 + x, fromY: 45 + y, toX: 20 + x, toY: 85 + y, lineWidth: 10, capStyle: NSLineCapStyle.squareLineCapStyle)
+
+canvas.lineColor = Color.yellow
+canvas.drawLine(fromX: 30 + x, fromY: 45 + y, toX: 30 + x, toY: 85 + y, lineWidth: 10, capStyle: NSLineCapStyle.squareLineCapStyle)
+
+//bottom lines
+canvas.lineColor = Color.black
+canvas.drawLine(fromX: 10 + x, fromY: 175 + y, toX: 10 + x, toY: 215 + y, lineWidth: 10, capStyle: NSLineCapStyle.squareLineCapStyle)
+
+canvas.lineColor = Color.orange
+canvas.drawLine(fromX: 20 + x, fromY: 175 + y, toX: 20 + x, toY: 215 + y, lineWidth: 10, capStyle: NSLineCapStyle.squareLineCapStyle)
+
+canvas.lineColor = Color.yellow
+canvas.drawLine(fromX: 30 + x, fromY: 175 + y, toX: 30 + x, toY: 215 + y, lineWidth: 10, capStyle: NSLineCapStyle.squareLineCapStyle)
+        
+    }
+}
+
+
+//coloured lines starting with yellow
+for y in stride(from: 0, through: 520, by: 270){
+    for x in stride(from: 0, through: 520, by: 80){
+        
+        //top lines
+        canvas.lineColor = Color.yellow
+        canvas.drawLine(fromX: 50 + x, fromY: 45 + y, toX: 50 + x, toY: 85 + y, lineWidth: 10, capStyle: NSLineCapStyle.squareLineCapStyle)
+        
+        canvas.lineColor = Color.orange
+        canvas.drawLine(fromX: 60 + x, fromY: 45 + y, toX: 60 + x, toY: 85 + y, lineWidth: 10, capStyle: NSLineCapStyle.squareLineCapStyle)
+        
+        canvas.lineColor = Color.black
+        canvas.drawLine(fromX: 70 + x, fromY: 45 + y, toX: 70 + x, toY: 85 + y, lineWidth: 10, capStyle: NSLineCapStyle.squareLineCapStyle)
+        
+        //bottom lines
+        canvas.lineColor = Color.yellow
+        canvas.drawLine(fromX: 50 + x, fromY: 175 + y, toX: 50 + x, toY: 215 + y, lineWidth: 10, capStyle: NSLineCapStyle.squareLineCapStyle)
+        
+        canvas.lineColor = Color.orange
+        canvas.drawLine(fromX: 60 + x, fromY: 175 + y, toX: 60 + x, toY: 215 + y, lineWidth: 10, capStyle: NSLineCapStyle.squareLineCapStyle)
+        
+        canvas.lineColor = Color.black
+        canvas.drawLine(fromX: 70 + x, fromY: 175 + y, toX: 70 + x, toY: 215 + y, lineWidth: 10, capStyle: NSLineCapStyle.squareLineCapStyle)
+        
+    }
+}
 //
 //
 //canvas.borderColor = Color.yellow
